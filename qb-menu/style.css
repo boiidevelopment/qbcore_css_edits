@@ -1,0 +1,134 @@
+/* Nice font for button from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+#container {
+    position: absolute;
+    height: auto;
+    top: 20%;
+    right: 20%;
+    border-radius: 5px;
+    background: transparent !important;
+}
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+}
+.title {
+    cursor: default;
+    gap: 10px;
+    display: flex;
+    flex-direction: row !important;
+	border-radius: 12px;
+}
+
+#buttons {
+    max-height: 75vh;
+    width: 31vw;
+    overflow-x: none;
+    overflow-y: auto;
+    padding: 10px;
+	border-radius: 12px;
+}
+
+html,
+body {
+    background: transparent !important;
+}
+
+#buttons::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.button {
+    width: auto;
+    max-width: 45%;
+    height: 10%;
+    background: rgba(31,30,30, 90%);
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding: 0.45rem;
+    display: flex;
+    flex-direction: column;
+	border-radius: 12px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+}
+
+.button:hover {
+    background-color: #4dcbc2;
+    cursor: pointer;
+	background: rgba(31,30,30, 90%);
+    box-shadow: 0 0 10px rgb(77, 203, 194);
+    border: 1px solid;
+    border-image: linear-gradient(var(--angle), #4dcbc2,#45b6ae,#3da29b,#45b6ae,#4dcbc2) 1;
+	animation:5s rotate linear infinite, 5s gradient linear infinite;
+    border-radius: 12px;
+	color: #4dcbc2;
+}
+
+.title {
+    width: auto;
+    max-width: 45%;
+    height: 10%;
+    background: rgba(31,30,30, 90%);
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding: 0.45rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title > div.header {
+    text-decoration: underline !important;
+}
+
+.disabled {
+    background: rgba(102, 102, 102, 0.9) !important;
+    cursor: default;
+}
+
+div > .text {
+    flex-direction: column;
+    font-size: 0.75rem;
+    overflow: hidden;
+}
+
+div > .header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+    overflow: wrap;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 400;
+    overflow: hidden;
+}
